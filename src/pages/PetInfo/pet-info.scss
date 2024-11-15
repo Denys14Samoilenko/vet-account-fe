@@ -1,0 +1,82 @@
+.petInfo {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	height: calc(100vh - 100px);
+
+	@media (min-width: 1024px) {
+		height: calc(100vh - 50px);
+	}
+
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		overflow-y: auto;
+		height: 100%;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 30px;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+			height: 100%;
+		}
+	}
+
+	&__characteristics {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 20px;
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 50%;
+		}
+
+		@media (min-width: 1200px) {
+			width: 70%;
+		}
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 20px;
+	}
+
+	&__image {
+		width: 100%;
+
+		@media (min-width: 768px) {
+			width: 50%;
+		}
+
+		@media (min-width: 1200px) {
+			width: 30%;
+		}
+	}
+}

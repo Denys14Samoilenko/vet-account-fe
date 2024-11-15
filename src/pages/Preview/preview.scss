@@ -1,0 +1,23 @@
+.preview {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	height: calc(100vh - 100px);
+
+	@media (min-width: 1024px) {
+		height: calc(100vh - 50px);
+	}
+
+
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+		overflow-y: auto;
+	}
+}
+
+.css-t3ipsp-control {
+	box-shadow: none !important;
+}
